@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanly — Fan Club Management Made Simple</title>
+  <style>
+    :root {
+      --bg: #0f0f1a;
+      --surface: #1a1a2e;
+      --accent: #ff3d7f;
+      --accent-2: #7b5cff;
+      --text: #f2f2f7;
+      --muted: #9a9ab0;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--text); }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 61, 127, 0.3);
+    }
+
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 5vw, 3.75rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .features {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature {
+      background: var(--surface);
+      padding: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 3rem 2rem;
+      text-align: center;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 1rem; }
+      nav a { margin-left: 1rem; }
+      .hero { padding: 3rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fanly</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#signup" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Started</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Grow your <span>fan club</span><br />the effortless way.</h1>
+    <p>
+      Manage members, send newsletters, sell merch, and host exclusive events —
+      all from one beautifully simple dashboard.
+    </p>
+    <a href="#signup" class="btn">Start your free trial</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <div class="feature-icon">👥</div>
+      <h3>Member Management</h3>
+      <p>Track memberships, tiers, and renewals with zero spreadsheets.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">✉️</div>
+      <h3>Built-in Newsletters</h3>
+      <p>Reach your fans with rich emails that match your brand.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🎟️</div>
+      <h3>Events & Tickets</h3>
+      <p>Host meetups, Q&As, and concerts with integrated ticketing.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💰</div>
+      <h3>Merch Storefront</h3>
+      <p>Sell limited-edition drops directly to your most loyal fans.</p>
+    </div>
+  </section>
+
+  <section class="cta" id="signup">
+    <h2>Ready to connect with your fans?</h2>
+    <p>Join thousands of creators building thriving fan communities on Fanly.</p>
+    <a href="#" class="btn">Get Started — It's Free</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Fanly. Built for creators, by creators.
+  </footer>
+</body>
+</html>
