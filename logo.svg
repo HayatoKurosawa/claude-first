@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="OUR MIND">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbeab0"/>
+      <stop offset="0.35" stop-color="#d9b04a"/>
+      <stop offset="0.6" stop-color="#a77a1e"/>
+      <stop offset="0.85" stop-color="#f1d27c"/>
+      <stop offset="1" stop-color="#b8892a"/>
+    </linearGradient>
+    <radialGradient id="red" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#c8202e"/>
+      <stop offset="0.7" stop-color="#8c0f19"/>
+      <stop offset="1" stop-color="#5e0810"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#gold)"/>
+  <circle cx="100" cy="100" r="91" fill="url(#red)"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="url(#gold)" stroke-width="0.6" stroke-dasharray="1.5 3"/>
+  <path d="M100 24 l5 7 -5 7 -5 -7z" fill="url(#gold)"/>
+  <path d="M100 162 l5 7 -5 7 -5 -7z" fill="url(#gold)"/>
+  <path d="M52 64 H148 M52 136 H148" stroke="url(#gold)" stroke-width="1"/>
+  <text x="100" y="124" text-anchor="middle" font-family="'Cormorant Garamond','Times New Roman',Georgia,serif" font-size="66" font-weight="600" letter-spacing="2" fill="url(#gold)">OM</text>
+  <text x="100" y="152" text-anchor="middle" font-family="'Cormorant Garamond','Times New Roman',Georgia,serif" font-size="11" letter-spacing="5" fill="url(#gold)">OUR MIND</text>
+  <text x="100" y="58" text-anchor="middle" font-family="'Cormorant Garamond','Times New Roman',Georgia,serif" font-size="9" letter-spacing="4" fill="url(#gold)">EST. 2024</text>
+</svg>

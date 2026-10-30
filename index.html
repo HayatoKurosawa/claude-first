@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUR MIND | IT Solutions for the Future</title>
   <meta name="description" content="OUR MIND - ITコンサルティング、DX推進、AI事業、受託開発、SaaSを提供するテクノロジーカンパニー">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">OUR MIND</a>
+      <a href="#" class="logo">
+        <img src="logo.svg" alt="" class="logo-mark" width="44" height="44">
+        <span class="logo-text">OUR MIND</span>
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
         <span></span>
         <span></span>
@@ -28,50 +35,59 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <img src="logo.svg" alt="OUR MIND" class="hero-emblem" width="150" height="150">
       <p class="hero-label">Technology &times; Creativity</p>
       <h1 class="hero-title">テクノロジーで、<br>未来を共に創る。</h1>
+      <div class="ornament" aria-hidden="true"><span></span></div>
       <p class="hero-description">
         私たちはITの力で企業の課題を解決し、<br class="sp-only">新しい価値を生み出します。
       </p>
       <a href="#contact" class="btn">お問い合わせ</a>
     </div>
+    <a href="#services" class="hero-scroll" aria-label="下へスクロール">Scroll</a>
   </section>
 
   <!-- Services -->
   <section class="services" id="services">
     <div class="container">
-      <p class="section-label">Services</p>
-      <h2 class="section-title">事業内容</h2>
+      <div class="section-head">
+        <p class="section-label">Services</p>
+        <h2 class="section-title">事業内容</h2>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+      </div>
       <div class="services-grid">
         <div class="service-card">
+          <span class="service-num">01</span>
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 20V10"/>
               <path d="M18 20V4"/>
               <path d="M6 20v-4"/>
             </svg>
           </div>
           <h3>IT Consulting</h3>
+          <p class="service-ja">ITコンサルティング</p>
           <p>IT戦略の立案から実行支援まで、企業のデジタル化を包括的にサポートします。最適なテクノロジー選定と導入計画を提案します。</p>
         </div>
         <div class="service-card">
+          <span class="service-num">02</span>
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-              <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
-              <polyline points="7.5 19.79 7.5 14.6 3 12"/>
-              <polyline points="21 12 16.5 14.6 16.5 19.79"/>
               <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
               <line x1="12" y1="22.08" x2="12" y2="12"/>
             </svg>
           </div>
-          <h3>DX</h3>
+          <h3>Digital Transformation</h3>
+          <p class="service-ja">DX推進支援</p>
           <p>業務プロセスの可視化・自動化を通じて、デジタルトランスフォーメーションを推進。組織全体の生産性向上を実現します。</p>
         </div>
         <div class="service-card">
+          <span class="service-num">03</span>
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/>
               <path d="M8.25 9.93A4 4 0 0 1 12 2"/>
               <path d="M12 18v4"/>
@@ -80,28 +96,33 @@
             </svg>
           </div>
           <h3>AI Business</h3>
+          <p class="service-ja">AI事業</p>
           <p>機械学習・自然言語処理などのAI技術を活用し、データドリブンな意思決定と業務効率化を支援します。</p>
         </div>
         <div class="service-card">
+          <span class="service-num">04</span>
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="16 18 22 12 16 6"/>
               <polyline points="8 6 2 12 8 18"/>
               <line x1="14" y1="4" x2="10" y2="20"/>
             </svg>
           </div>
           <h3>Contract Development</h3>
+          <p class="service-ja">受託開発</p>
           <p>Webアプリケーション、モバイルアプリ、業務システムなど、お客様のニーズに合わせた高品質なシステム開発を提供します。</p>
         </div>
         <div class="service-card">
+          <span class="service-num">05</span>
           <div class="service-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
               <path d="M12 12v9"/>
               <path d="m8 17 4 4 4-4"/>
             </svg>
           </div>
           <h3>SaaS</h3>
+          <p class="service-ja">SaaS事業</p>
           <p>クラウドベースの自社SaaSプロダクトの企画・開発・運用。スケーラブルなソリューションで継続的な価値を提供します。</p>
         </div>
       </div>
@@ -110,6 +131,7 @@
 
   <!-- About -->
   <section class="about" id="about">
+    <div class="hero-pattern" aria-hidden="true"></div>
     <div class="container">
       <div class="about-inner">
         <div class="about-text">
@@ -145,8 +167,11 @@
   <!-- Company -->
   <section class="company" id="company">
     <div class="container">
-      <p class="section-label">Company</p>
-      <h2 class="section-title">会社概要</h2>
+      <div class="section-head">
+        <p class="section-label">Company</p>
+        <h2 class="section-title">会社概要</h2>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+      </div>
       <div class="company-table">
         <div class="company-row">
           <span class="company-label">会社名</span>
@@ -170,12 +195,16 @@
 
   <!-- Contact -->
   <section class="contact" id="contact">
+    <div class="hero-pattern" aria-hidden="true"></div>
     <div class="container">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">お問い合わせ</h2>
-      <p class="contact-description">
-        サービスに関するご質問やご相談など、<br class="sp-only">お気軽にお問い合わせください。
-      </p>
+      <div class="section-head">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">お問い合わせ</h2>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <p class="contact-description">
+          サービスに関するご質問やご相談など、<br class="sp-only">お気軽にお問い合わせください。
+        </p>
+      </div>
       <form class="contact-form" id="contactForm">
         <div class="form-group">
           <label for="name">お名前</label>
@@ -202,7 +231,8 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo">OUR MIND</span>
+        <img src="logo.svg" alt="OUR MIND" class="footer-emblem" width="72" height="72">
+        <span class="logo-text">OUR MIND</span>
         <p class="footer-tagline">テクノロジーで、未来を共に創る。</p>
       </div>
       <nav class="footer-nav">

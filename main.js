@@ -115,12 +115,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = contactForm.querySelector(".btn-submit");
     const originalText = submitBtn.textContent;
     submitBtn.textContent = "送信しました";
-    submitBtn.style.background = "#10b981";
+    submitBtn.style.background = "#7d0e18";
+    submitBtn.style.color = "#f3dc93";
     submitBtn.disabled = true;
 
     setTimeout(() => {
       submitBtn.textContent = originalText;
       submitBtn.style.background = "";
+      submitBtn.style.color = "";
       submitBtn.disabled = false;
       contactForm.reset();
     }, 3000);
